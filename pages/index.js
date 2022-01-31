@@ -14,6 +14,6 @@ export default function Home() {
 	}, []);
 
 	return (
-		<>{posts && posts.map((items, index) => <h1 ket={index}>{items}</h1>)}</>
+		<>{posts && posts.map((items, index) => <h1 key={index}>{items}</h1>)}</>
 	);
 }
